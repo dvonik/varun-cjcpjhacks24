@@ -1,0 +1,80 @@
+/* Reset some styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #f2e6b5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the main content */
+  main {
+    padding: 20px;
+  }
+  
+  main section {
+    margin-bottom: 30px;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style the tech stack section */
+  main li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #8fe3f0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Add some animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  header, main, footer {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Add some cool fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  
+  body, h1, h2, p {
+    font-family: 'Montserrat', sans-serif;
+  }
