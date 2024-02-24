@@ -1,7 +1,7 @@
-import pandas as pd
+#import pandas as pd
 import numpy as np
+import cv2
 import pytesseract
-import easyocr
 from PIL import Image
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -14,10 +14,11 @@ import requests
 receipts = ['image.jpg']
 amounts = []
 merchants = []
-reader = easyocr.Reader(['en'])
+
 for receipt in receipts:
-    img = Image.open(receipt)
-    text = reader.readText(img)
+    img = cv2.imread('image.jpg')
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    text = pytesseract.image_to_string(gray)
     
     
 # Extract bank account balance and recent transactions
