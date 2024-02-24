@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import pytesseract
+import easyocr
 from PIL import Image
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -10,12 +11,13 @@ import requests
 #Step 1: Reprocess the Data through OCR requests
 # Extract all relevant information from the receipt
 
-receipts = ['receipt1.png', 'receipt2.png', 'receipt3.png']
+receipts = ['image.jpg']
 amounts = []
 merchants = []
+reader = easyocr.Reader(['en'])
 for receipt in receipts:
-    image = Image.open(receipt)
-    text = pytesseract.image_to_string(image)
+    img = Image.open(receipt)
+    text = reader.readText(img)
     
     
 # Extract bank account balance and recent transactions
