@@ -1,0 +1,26 @@
+{
+  "name": "varun-cjcpjhacks24",
+  "version": "1.0.0",
+  "description": "cool thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvonik/varun-cjcpjhacks24.git"
+  },
+  "keywords": [
+    "cool",
+    "ai",
+    "future",
+    "scanner",
+    "receipt"
+  ],
+  "author": "Om and Arnav",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/dvonik/varun-cjcpjhacks24/issues"
+  },
+  "homepage": "https://github.com/dvonik/varun-cjcpjhacks24#readme"
+}

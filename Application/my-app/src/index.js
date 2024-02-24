@@ -9,6 +9,9 @@ var db = openDatabase( {
   name: 'User DataBase',
   location: 'default'
 });
+function HelloWorld() {
+  return <h1 className="greeting">Hello, world!</h1>;
+}
 const insertData = async() => {
   const query_insert = 'INSERT INTO users {name, mobileNO, password} VALUES {?, ?, ?}';
   const params = ['Xyz',  '123456789', '123'];
